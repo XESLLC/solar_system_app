@@ -1,0 +1,11 @@
+<%= link_to "Sign Up", signup_path %>
+<p></p>
+<%= form_tag @user, url: root_path do %>
+<%= label_tag :email %>
+<%= email_field_tag :email %>
+<p></p>
+<%= label_tag :password %>
+<%= password_field_tag :password %>
+<p></p>
+<%= submit_tag "Sign In"%>
+<% end %>

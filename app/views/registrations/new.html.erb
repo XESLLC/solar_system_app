@@ -1,0 +1,21 @@
+<%= form_for @user, url: signup_path do |t| %>
+
+<%= t.label :first_name %>
+<%= t.text_field :first_name %>
+<%= t.label :last_name %>
+<%= t.text_field :last_name %>
+<p>
+
+</p>
+<%= t.label :email %>
+<%= t.email_field :email %>
+<%= t.label :password %>
+<%= t.password_field :password %>
+<%= t.label :password_confirmation %>
+<%= t.password_field :password_confirmation %>
+<p>
+
+</p>
+<%= t.submit %>
+
+<% end %>
